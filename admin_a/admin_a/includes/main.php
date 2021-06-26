@@ -1,0 +1,50 @@
+<?php
+		if(isset($_REQUEST['trang']))
+			{$trang=$_REQUEST['trang'];}
+		else
+			{$trang="";
+				include("includes/index.php");
+			}
+			//admin
+			if($trang=="admin")
+				include("admin/danhsach.php");
+			if($trang=="adminedit")
+				include("admin/edit.php");
+			//drink
+			if($trang=="drink")
+				include("drink/danhsach.php");
+			if($trang=="drinkedit")
+				include("drink/edit.php");
+			//user
+			if($trang=="user")
+				include("user/danhsach.php");
+			//baner
+			elseif($trang=="banner")
+				include("banner/danhsach.php");
+			elseif($trang=="banneredit")
+				include("banner/edit.php");
+			//menu
+			elseif($trang=="menu")
+				include("menu/danhsach.php");
+			elseif($trang=="menuedit")
+				include("menu/edit.php");
+			//order
+			elseif($trang=="order")
+				include("order/danhsach.php");
+
+			elseif($trang=="dahuy")
+				include("order/dahuy.php");
+			elseif($trang=="dangxuly")
+				include("order/dangxuly.php");
+			elseif($trang=="vanchuyen")
+				include("order/vanchuyen.php");
+			elseif($trang=="hoanthanh")
+				include("order/hoanthanh.php");
+
+			elseif($trang=="orderDetail")
+			include("order/detail.php");
+			elseif($trang=="new")
+			include("order/new.php");
+			
+			  
+?>
